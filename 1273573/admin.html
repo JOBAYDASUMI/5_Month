@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="stylesheet" href="styles/js-snackbar.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="scripts/js-snackbar.js"></script>
+    <script
+    lang="javascript"
+    src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"
+  ></script>
+    <style>
+      .two-col-row {
+        display: flex;
+        margin: 15px 0;
+      }
+      .col50 {
+        width: 50%;
+      }
+      .frow {
+        margin-bottom: 0.5rem;
+        display: flex;
+      }
+      .frow input[type="text"],
+      input[type="number"],
+      textarea {
+        flex: 1 1 auto;
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+      }
+      .table 
+      {
+        width: 98%;
+        border: solid 1px lightgray;
+        border-collapse: collapse;
+       
+      }
+      .table th, td {
+        padding: .5rem;
+        border: solid 1px lightgray;
+      }
+    </style>
+    <script src="scripts/admin.js"></script>
+  </head>
+  <body>
+    <nav id="nav">
+      <span class="brand">Fitness store</span>
+      <span class="fixer"></span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="e-com.html">Ecommerce</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+    <div class="con main">
+      <div>
+        <h3 class="my-2">Add products</h3>
+        <div id="drop">
+          Drop excel file here
+        </div>
+      </div>
+      <div >
+        
+          <h3 class="my-2">Products</h3>
+          <table class="table">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Details</th>
+                    <th>Price</th>
+                
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+          </table>
+       
+       
+      </div>
+    </div>
+    <footer class="footer">
+      <p>All Right Resevrved By MIH eStore &copy; Copyright 2023</p>
+    </footer>
+  </body>
+</html>
